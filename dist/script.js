@@ -38,8 +38,8 @@ const web3_js_1 = require("@solana/web3.js");
 const fs_1 = __importDefault(require("fs"));
 const GLOBAL_AUTHORITY_SEED = "global-authority";
 const PROGRAM_ID = "F7cBo37zfFK5kLbTZxfejozgSiTb6J3EfgNWiu9HRPzD";
-// anchor.setProvider(anchor.Provider.local(web3.clusterApiUrl("mainnet-beta")));
-anchor.setProvider(anchor.Provider.local(anchor_1.web3.clusterApiUrl("devnet")));
+anchor.setProvider(anchor.Provider.local(anchor_1.web3.clusterApiUrl("mainnet-beta")));
+// anchor.setProvider(anchor.Provider.local(web3.clusterApiUrl("devnet")));
 let program = null;
 // Configure the client to use the local cluster.
 const idl = JSON.parse(fs_1.default.readFileSync(__dirname + "/staking_program.json", "utf8"));
