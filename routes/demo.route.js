@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const { SuccessResponseObject, ErrorResponseObject } = require('../common/http');
-const { getStakedNFTsFromWallet } = require('../dist/scripts');
+const { getStakedNFTsFromWallet } = require('../dist/script');
 
 const r = Router();
 
